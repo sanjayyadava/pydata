@@ -1,6 +1,6 @@
 # Create your views here.
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post
+from .models import Post, Category, Subcategory
 from .forms import PostForm
 
 def home(request):
@@ -36,4 +36,16 @@ def post_delete(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
     return redirect('home')
+
+def blog_list(request):
+    posts = Post.objects.all()
+    categories = Category.objects.all()
+    return render(request, 'blog/blog_list.html', {
+        'posts': posts,
+        'categories': categories
+    })
+def posts_by_category(request, category_id):
+    posts = Post.objects.filter(category_id=category_id)
+    return render(request, 'blog/posts_by_category.html', {'posts': posts})
+
 
