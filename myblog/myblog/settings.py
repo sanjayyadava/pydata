@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',  # for image/file upload support
     'blog',
+    'pages',
     
     
 ]
