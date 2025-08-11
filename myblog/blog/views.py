@@ -4,7 +4,9 @@ from .models import Post, Category, Subcategory
 from .forms import PostForm
 
 def home(request):
+    print(request)
     posts = Post.objects.all().order_by('-created_at')
+          
     return render(request, 'blog/home.html', {'posts': posts})
 
 def post_detail(request, pk):
