@@ -9,3 +9,9 @@ def categories_and_pages(request):
        
         
     }
+    
+def base_url(request):
+    return {
+        'BASE_URL': f"{request.scheme}://{request.get_host()}"
+    }
+    

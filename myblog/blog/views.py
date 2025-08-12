@@ -2,12 +2,13 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Category, Subcategory
 from .forms import PostForm
+from .models import Page
+
 
 def home(request):
-    print(request)
-    posts = Post.objects.all().order_by('-created_at')
-          
-    return render(request, 'blog/home.html', {'posts': posts})
+    pages = Page.objects.all()  
+    posts = Post.objects.all().order_by('-created_at')         
+    return render(request, 'blog/home.html', {'posts': posts,'page': pages})
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
