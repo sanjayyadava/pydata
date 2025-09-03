@@ -1,7 +1,7 @@
-<b>Basic Python Interview Questions</b>
+<b>Basic Python Interview Questions</b><br>
 These are some of the questions you might encounter during an entry-level Python interview. 
 
-1. What is Python, and list some of its key features.
+<b>1. What is Python, and list some of its key features.</b>
 Python is a versatile, high-level programming language known for its easy-to-read syntax and broad applications. Here are some of Python’s key features:
 
 Simple and Readable Syntax: Python’s syntax is clear and straightforward, making it accessible for beginners and efficient for experienced developers.
