@@ -10,7 +10,7 @@ Python is a versatile, high-level programming language known for its easy-to-rea
 <li><strong>Extensive Libraries and Frameworks</strong>: Libraries like NumPy, Pandas, and Django expand Python’s functionality for specialized tasks in data science, web development, and more.</li>
 <li><strong>Cross-Platform Compatibility</strong>: Python can run on different operating systems, including Windows, macOS, and Linux.</li>
 </ul>
-<b>what is list ? </b>
+<b>2.what is list ? </b>
 <p>Lists are used to store multiple items in a single variable.
 Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
 Lists are created using square brackets: 
